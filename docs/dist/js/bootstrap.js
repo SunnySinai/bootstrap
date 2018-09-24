@@ -26,7 +26,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // CSS TRANSITION SUPPORT (Shoutout: https://modernizr.com/)
   // ============================================================
@@ -74,7 +74,7 @@ if (typeof jQuery === 'undefined') {
     }
   })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: alert.js v3.4.0
@@ -86,7 +86,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // ALERT CLASS DEFINITION
   // ======================
@@ -170,7 +170,7 @@ if (typeof jQuery === 'undefined') {
 
   $(document).on('click.bs.alert.data-api', dismiss, Alert.prototype.close)
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: button.js v3.4.0
@@ -182,7 +182,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // BUTTON PUBLIC CLASS DEFINITION
   // ==============================
@@ -296,7 +296,7 @@ if (typeof jQuery === 'undefined') {
       $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type))
     })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: carousel.js v3.4.0
@@ -308,7 +308,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // CAROUSEL CLASS DEFINITION
   // =========================
@@ -543,7 +543,7 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: collapse.js v3.4.0
@@ -553,10 +553,8 @@ if (typeof jQuery === 'undefined') {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
-/* jshint latedef: false */
-
 +function ($) {
-  'use strict';
+  'use strict'
 
   // COLLAPSE PUBLIC CLASS DEFINITION
   // ================================
@@ -756,7 +754,7 @@ if (typeof jQuery === 'undefined') {
     Plugin.call($target, option)
   })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: dropdown.js v3.4.0
@@ -768,7 +766,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // DROPDOWN CLASS DEFINITION
   // =========================
@@ -922,7 +920,7 @@ if (typeof jQuery === 'undefined') {
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: modal.js v3.4.0
@@ -934,7 +932,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // MODAL CLASS DEFINITION
   // ======================
@@ -1265,7 +1263,7 @@ if (typeof jQuery === 'undefined') {
     Plugin.call($target, option, this)
   })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: tooltip.js v3.4.0
@@ -1278,7 +1276,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // TOOLTIP PUBLIC CLASS DEFINITION
   // ===============================
@@ -1485,10 +1483,10 @@ if (typeof jQuery === 'undefined') {
         var viewportDim = this.getPosition(this.$viewport)
 
         placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top'    :
-                    placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
-                    placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
-                    placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
-                    placement
+          placement == 'top'    && pos.top    - actualHeight < viewportDim.top    ? 'bottom' :
+            placement == 'right'  && pos.right  + actualWidth  > viewportDim.width  ? 'left'   :
+              placement == 'left'   && pos.left   - actualWidth  < viewportDim.left   ? 'right'  :
+                placement
 
         $tip
           .removeClass(orgPlacement)
@@ -1645,8 +1643,8 @@ if (typeof jQuery === 'undefined') {
 
   Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
     return placement == 'bottom' ? { top: pos.top + pos.height,   left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
-           placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+      placement == 'top'    ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } :
+        placement == 'left'   ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
         /* placement == 'right' */ { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
 
   }
@@ -1786,7 +1784,7 @@ if (typeof jQuery === 'undefined') {
     return this
   }
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: popover.js v3.4.0
@@ -1798,7 +1796,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // POPOVER PUBLIC CLASS DEFINITION
   // ===============================
@@ -1857,8 +1855,8 @@ if (typeof jQuery === 'undefined') {
 
     return $e.attr('data-content')
       || (typeof o.content == 'function' ?
-            o.content.call($e[0]) :
-            o.content)
+        o.content.call($e[0]) :
+        o.content)
   }
 
   Popover.prototype.arrow = function () {
@@ -1895,7 +1893,7 @@ if (typeof jQuery === 'undefined') {
     return this
   }
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.4.0
@@ -1907,7 +1905,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // SCROLLSPY CLASS DEFINITION
   // ==========================
@@ -2068,7 +2066,7 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: tab.js v3.4.0
@@ -2080,7 +2078,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // TAB CLASS DEFINITION
   // ====================
@@ -2145,15 +2143,15 @@ if (typeof jQuery === 'undefined') {
       $active
         .removeClass('active')
         .find('> .dropdown-menu > .active')
-          .removeClass('active')
+        .removeClass('active')
         .end()
         .find('[data-toggle="tab"]')
-          .attr('aria-expanded', false)
+        .attr('aria-expanded', false)
 
       element
         .addClass('active')
         .find('[data-toggle="tab"]')
-          .attr('aria-expanded', true)
+        .attr('aria-expanded', true)
 
       if (transition) {
         element[0].offsetWidth // reflow for transition
@@ -2165,10 +2163,10 @@ if (typeof jQuery === 'undefined') {
       if (element.parent('.dropdown-menu').length) {
         element
           .closest('li.dropdown')
-            .addClass('active')
+          .addClass('active')
           .end()
           .find('[data-toggle="tab"]')
-            .attr('aria-expanded', true)
+          .attr('aria-expanded', true)
       }
 
       callback && callback()
@@ -2224,7 +2222,7 @@ if (typeof jQuery === 'undefined') {
     .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
     .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
 
-}(jQuery);
+}(jQuery)
 
 /* ========================================================================
  * Bootstrap: affix.js v3.4.0
@@ -2236,7 +2234,7 @@ if (typeof jQuery === 'undefined') {
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // AFFIX CLASS DEFINITION
   // ======================
@@ -2389,4 +2387,4 @@ if (typeof jQuery === 'undefined') {
     })
   })
 
-}(jQuery);
+}(jQuery)
