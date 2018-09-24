@@ -8,7 +8,7 @@
 
 
 +function ($) {
-  'use strict';
+  'use strict'
 
   // POPOVER PUBLIC CLASS DEFINITION
   // ===============================
@@ -67,8 +67,8 @@
 
     return $e.attr('data-content')
       || (typeof o.content == 'function' ?
-            o.content.call($e[0]) :
-            o.content)
+        o.content.call($e[0]) :
+        o.content)
   }
 
   Popover.prototype.arrow = function () {
@@ -105,4 +105,4 @@
     return this
   }
 
-}(jQuery);
+}(jQuery)
